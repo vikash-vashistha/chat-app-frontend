@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
+import { ChatState } from "../Context/ChatProvider";
 
 export const Login = () => {
+  const { user, setUser } = ChatState();
   const navigate = useNavigate();
     const toast = useToast();
   const [loading, setLoading] = useState(false);
@@ -59,10 +61,11 @@ export const Login = () => {
         isClosable: true,
         position: "bottom",
       });
+      
       localStorage.setItem('userInfo', JSON.stringify(data));
 
       setLoading(false);
-      navigate('/chats')
+      
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -75,6 +78,8 @@ export const Login = () => {
        setLoading(false);
    }
   };
+
+  {user ? <Navigate to="/chats"/> : <div>Loading...</div>}
 
   return (
     <VStack spacing="5px">
