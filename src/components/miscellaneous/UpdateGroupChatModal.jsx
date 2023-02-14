@@ -234,6 +234,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
                 />
               ))}
             </Box>
+            
             <FormControl d="flex">
               <Input
                 placeholder="Chat Name"

@@ -9,8 +9,8 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
-import { Login } from "../components/Login";
-import { Signup } from "../components/Signup";
+import { Login } from "../components/Authentication/Login";
+import { Signup } from "../components/Authentication/Signup";
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
@@ -37,7 +37,7 @@ export const HomePage = () => {
         borderWidth="1px"
         color="black"
       >
-        <Text fontSize="4xl" fontFamily="Work sans" color="black" >
+        <Text fontSize="4xl" fontFamily="Work sans" color="black">
           Vikash Chat App
         </Text>
       </Box>
@@ -48,8 +48,8 @@ export const HomePage = () => {
             <Tab w="50%">Sign up</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>{<Login/>}</TabPanel>
-            <TabPanel>{<Signup/>}</TabPanel>
+            <TabPanel>{<Login />}</TabPanel>
+            <TabPanel>{<Signup />}</TabPanel>
           </TabPanels>
         </Tabs>
       </Box>

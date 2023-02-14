@@ -4,7 +4,6 @@ import { ChatState } from "../../Context/ChatProvider";
 
 export const UserListItem = ({user, handleFunction }) => {
   
-
   return (
     <Box
       onClick={handleFunction}
