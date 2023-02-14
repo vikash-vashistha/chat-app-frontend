@@ -25,7 +25,10 @@ export const MyChats = ({ fetchAgain }) => {
         },
       };
 
-      const { data } = await axios.get("http://localhost:8000/api/chat", config);
+      const { data } = await axios.get(
+        "https://vikash-chat-app.onrender.com/api/chat",
+        config
+      );
       setChats(data);
     } catch (error) {
       toast({

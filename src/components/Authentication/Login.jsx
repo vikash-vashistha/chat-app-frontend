@@ -40,7 +40,7 @@ export const Login = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8000/api/user/login",
+        "https://vikash-chat-app.onrender.com/api/user/login",
         { email, password },
         config
       );

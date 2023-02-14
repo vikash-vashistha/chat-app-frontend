@@ -77,7 +77,10 @@ export function SideDrawer() {
         },
       };
 
-      const { data } = await axios.get(`http://localhost:8000/api/user?search=${search}`, config);
+      const { data } = await axios.get(
+        `https://vikash-chat-app.onrender.com/api/user?search=${search}`,
+        config
+      );
 
       setLoading(false);
       setSearchResult(data);
@@ -105,7 +108,7 @@ export function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8000/api/chat`,
+        `https://vikash-chat-app.onrender.com/api/chat`,
         { userId },
         config
       );
