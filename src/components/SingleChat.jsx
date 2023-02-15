@@ -14,7 +14,7 @@ import {ProfileModel} from "../components/miscellaneous/ProfileModel"
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = "https://vikash-chat-app.onrender.com"; // 
+const ENDPOINT = "https://vikash-chat-app.onrender.com/"; // 
 
 var socket, selectedChatCompare;
 
