@@ -74,11 +74,12 @@ export function SideDrawer() {
       const config = {
         headers: {
           Authorization: `Bearer ${user.token}`,
+          "Access-Control-Allow-Origin": "*",
         },
       };
 
       const { data } = await axios.get(
-        `/api/user?search=${search}`,
+        `https://vikash-chat-app.onrender.com/api/user?search=${search}`,
         config
       );
 
@@ -105,10 +106,11 @@ export function SideDrawer() {
         headers: {
           "Content-type": "application/json",
           Authorization: `Bearer ${user.token}`,
+          "Access-Control-Allow-Origin": "*",
         },
       };
       const { data } = await axios.post(
-        `/api/chat`,
+        `https://vikash-chat-app.onrender.com/api/chat`,
         { userId },
         config
       );

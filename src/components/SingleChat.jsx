@@ -45,13 +45,14 @@ export const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       const config = {
         headers: {
           Authorization: `Bearer ${user.token}`,
+          "Access-Control-Allow-Origin": "*",
         },
       };
 
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://vikash-chat-app.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -78,11 +79,12 @@ export const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           headers: {
             "Content-type": "application/json",
             Authorization: `Bearer ${user.token}`,
+            "Access-Control-Allow-Origin": "*",
           },
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          "https://vikash-chat-app.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,

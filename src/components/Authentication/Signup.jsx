@@ -90,11 +90,12 @@ export const Signup = () => {
       const config = {
         headers: {
           "Content-type": "application/json",
-        }
+          "Access-Control-Allow-Origin": "*",
+        },
       };
 // console.log(name, email, password, pic);
       const { data } = await axios.post(
-        "/api/user",
+        "https://vikash-chat-app.onrender.com/api/user",
         { name, email, password, pic },
         config
       );

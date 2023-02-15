@@ -22,11 +22,12 @@ export const MyChats = ({ fetchAgain }) => {
       const config = {
         headers: {
           Authorization: `Bearer ${user.token}`,
+          "Access-Control-Allow-Origin": "*",
         },
       };
 
       const { data } = await axios.get(
-        "/api/chat",
+        "https://vikash-chat-app.onrender.com/api/chat",
         config
       );
       setChats(data);

@@ -36,11 +36,12 @@ export const Login = () => {
       const config = {
         headers: {
           "Content-type": "application/json",
+          "Access-Control-Allow-Origin": "*"
         },
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "https://vikash-chat-app.onrender.com/api/user/login",
         { email, password },
         config
       );
