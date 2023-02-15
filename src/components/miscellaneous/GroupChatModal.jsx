@@ -59,7 +59,7 @@ export const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `https://vikash-chat-app.onrender.com/api/user?search=${search}`,
+        `/api/user?search=${search}`,
         config
       );
       console.log(data);
@@ -100,7 +100,7 @@ export const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `https://vikash-chat-app.onrender.com/api/chat/group`,
+        `/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),

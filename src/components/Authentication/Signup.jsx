@@ -94,7 +94,7 @@ export const Signup = () => {
       };
 // console.log(name, email, password, pic);
       const { data } = await axios.post(
-        "https://vikash-chat-app.onrender.com/api/user",
+        "/api/user",
         { name, email, password, pic },
         config
       );

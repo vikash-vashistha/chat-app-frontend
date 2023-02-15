@@ -14,7 +14,7 @@ import {ProfileModel} from "../components/miscellaneous/ProfileModel"
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = "https://vikash-chat-app.onrender.com/"; // 
+const ENDPOINT = "https://vikash-chat-app.onrender.com"; // 
 
 var socket, selectedChatCompare;
 
@@ -51,7 +51,7 @@ export const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `https://vikash-chat-app.onrender.com/api/message/${selectedChat._id}`,
+        `/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -82,7 +82,7 @@ export const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "https://vikash-chat-app.onrender.com/api/message",
+          "/api/message",
           {
             content: newMessage,
             chatId: selectedChat,
@@ -105,7 +105,9 @@ export const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   };
 
   useEffect(() => {
-    socket = io(ENDPOINT);
+    socket = io(ENDPOINT, {
+      transports: ['websocket', 'polling', 'flashsocket']
+    });
     socket.emit("setup", user);
     socket.on("connected", () => setSocketConnected(true));
     socket.on("typing", () => setIsTyping(true));

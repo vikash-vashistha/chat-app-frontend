@@ -78,7 +78,7 @@ export function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `https://vikash-chat-app.onrender.com/api/user?search=${search}`,
+        `/api/user?search=${search}`,
         config
       );
 
@@ -108,7 +108,7 @@ export function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `https://vikash-chat-app.onrender.com/api/chat`,
+        `/api/chat`,
         { userId },
         config
       );
@@ -149,7 +149,7 @@ console.log(data);
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+          Vikash Chat App
         </Text>
         <div>
           <Menu>
