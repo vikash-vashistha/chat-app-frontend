@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# CloneUrbanOutfitters
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Urban Outfitters is a lifestyle related retailer which specializes in selling apparel, clothing accessories and apartment products. It primarily targets teens and young adults who are interested in hipster subculture and alternative fashion..
+<a href="https://clone-urban-outfitters.vercel.app/" target="_blank">Click here for Live demo</a>
 
-## Available Scripts
+## Tech Stack used:
 
-In the project directory, you can run:
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>Module.css</li>
+  <li>Node js</li>
+  <li>MongoDb</li>
+  <li>Express</li>
+  <li>Chakra UI</li>
+  <li>Socket.io</li>
+</ul>
 
-### `npm start`
+## Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<ul>
+ <li>Search</li>
+  <li>filter and sorting</li>
+  <li>Add to cart</li>
+  <li>Login/Signup authentication</li>
+  <li>Responsive</li>
+<li>A customer can search for a city location and then see
+all available schemes.</li>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<li>
+Single-user as well as group chat can be done by the user</li>
+<li>A notification is shown to the user if the chat is not open.
+</li>
+<li>Own chat cannot be seen by the user if not authenticated.
+</li>
+ 
+</ul>
 
-### `npm test`
+### Thanks 😊.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![ChatApp](/src/img1.png)
+![ChatApp](/src/img2.png)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
